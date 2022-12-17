@@ -37,6 +37,12 @@ ul {
   padding: 0;
 }
 
+.images {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   width: 100%;
   margin-left: auto;
@@ -836,10 +842,6 @@ ul {
   color: var(--secondary-text-color);
 }
 
-.images {
-  display: block;
-}
-
 .backdrop {
   position: fixed;
   display: -webkit-box;
@@ -880,6 +882,18 @@ ul {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-icon {

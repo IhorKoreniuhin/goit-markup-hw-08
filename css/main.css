@@ -927,18 +927,27 @@ ul {
 }
 
 .form {
-  width: 528px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
 }
+@media screen and (min-width: 480px) {
+  .form {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 528px;
+  }
+}
 
 .form-title {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  margin-left: 12px;
 }
 
 .top-title {
@@ -1058,6 +1067,11 @@ textarea:focus, textarea:hover {
   margin-top: 25px;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .form-field-chek {
+    padding-left: 14px;
+  }
+}
 
 .icon-chek {
   display: inline-block;
@@ -1088,21 +1102,41 @@ textarea:focus, textarea:hover {
 }
 
 .policy-label {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 11px;
+  line-height: 1.14;
   color: var(--secondary-text-color);
   cursor: pointer;
+}
+@media screen and (max-width: 479px) {
+  .policy-label {
+    font-size: 10px;
+    line-height: 1.11;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .policy-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy-link {
   margin-left: 4px;
   color: rgb(33, 150, 243);
+}
+@media screen and (max-width: 479px) {
+  .policy-link {
+    position: absolute;
+    top: 18px;
+    left: 21px;
+  }
 }
 
 .form-btn {

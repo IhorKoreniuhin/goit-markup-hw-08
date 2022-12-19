@@ -796,7 +796,15 @@ img {
 }
 
 .team-list__social-link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -811,7 +819,6 @@ img {
 }
 
 .team-list__social-icon {
-  margin: 12px 0px 0px 12px;
   fill: currentColor;
 }
 
